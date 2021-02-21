@@ -38,8 +38,6 @@ export default function HerroBanner() {
     // eslint-disable-next-line
   }, []);
 
-  if (error) return <p>{error}</p>;
-
   return (
     <header className="HeroBanner">
       <div className="container">
@@ -48,17 +46,17 @@ export default function HerroBanner() {
 
           <div className="h1">
             <h1>Qovery Engine</h1>
-            <div className="gitlab-stars">
-              <div className="gitlab-stars__label">
-                <img src={iconGithubBlack} alt="Github icon" />
-                <span>Star</span>
-              </div>
-              {githubInfos && (
+            {githubInfos && (
+              <div className="gitlab-stars">
+                <div className="gitlab-stars__label">
+                  <img src={iconGithubBlack} alt="Github icon" />
+                  <span>Star</span>
+                </div>
                 <span className="gitlab-stars__count">
                   {githubInfos.stargazers_count}
                 </span>
-              )}
-            </div>
+              </div>
+            )}
           </div>
           <p className="headline">
             Abstraction layer to deploy microservices applications on any Cloud

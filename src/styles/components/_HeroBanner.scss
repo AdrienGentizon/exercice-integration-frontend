@@ -31,7 +31,7 @@
           line-height: 50px;
         }
         .gitlab-stars {
-          margin-top: 8px;
+          margin-top: 10px;
           margin-left: 20px;
           display: flex;
 
@@ -44,7 +44,8 @@
           background-color: white;
 
           span {
-            padding: 4px 12px;
+            padding: 3px 10px;
+            font-size: small;
           }
 
           &__label {
@@ -53,6 +54,9 @@
             padding-left: 12px;
             background-color: hsl(207, 100%, 98%);
             border-radius: 2px;
+            img {
+              width: 16px;
+            }
           }
           &__count {
             border-left: inherit;
