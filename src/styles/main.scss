@@ -1,3 +1,6 @@
-body {
-  background-color: tomato;
-}
+@import 'base/reset';
+@import 'base/fonts';
+
+@import 'components/HeroBanner';
+
+@import 'layouts/App';
