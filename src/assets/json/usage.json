@@ -1,0 +1,44 @@
+[
+  { "content": "let engine = Engine::new(", "tab": 0 },
+  { "content": "context, // parameters", "tab": 1 },
+  {
+    "content": "local_docker, // initialize Docker as a Build Platform",
+    "tab": 1
+  },
+  { "content": "ecr, // initialize Elastic Container Registry", "tab": 1 },
+  { "content": "aws, // initialize AWS account", "tab": 1 },
+  {
+    "content": "cloudflare, // initialize Cloudflare as DNS Nameservers",
+    "tab": 1
+  },
+  { "content": ");", "tab": 0 },
+
+  { "content": "let session = match engine.session() {", "tab": 0 },
+  { "content": "Ok(session) => session, // get the session", "tab": 1 },
+  {
+    "content": "Err(config_error) => panic!(\"configuration error {:?}\", config_error),",
+    "tab": 1
+  },
+  { "content": "};", "tab": 0 },
+
+  { "content": "let mut tx = session.transaction();", "tab": 0 },
+
+  { "content": "// create EKS (AWS managed Kubernetes cluster)", "tab": 0 },
+  { "content": "tx.create_kubernetes(&eks);", "tab": 0 },
+
+  {
+    "content": "// create the infrastructure and wait for the result",
+    "tab": 0
+  },
+  { "content": "match tx.commit() {", "tab": 0 },
+  { "content": "TransactionResult::Ok => println!(\"OK\"),", "tab": 1 },
+  {
+    "content": "TransactionResult::Rollback(commit_err) => println!(\"ERROR but rollback OK\"),",
+    "tab": 1
+  },
+  {
+    "content": "TransactionResult::UnrecoverableError(commit_err, rollback_err) => println!(\"FATAL ERROR\")",
+    "tab": 1
+  },
+  { "content": "};", "tab": 0 }
+]

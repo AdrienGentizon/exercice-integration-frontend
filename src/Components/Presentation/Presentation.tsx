@@ -1,4 +1,4 @@
-import qoveryPresentation from './../assets/svg/qovery-presentation.svg';
+import qoveryPresentation from './../../assets/svg/qovery-presentation.svg';
 
 export default function Presentation() {
   return (

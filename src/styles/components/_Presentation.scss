@@ -1,5 +1,8 @@
 .Presentation {
   padding-bottom: 64px;
+  background-color: #f9f9fd;
+
+  color: #454658;
 
   .container {
     max-width: 824px;
@@ -13,8 +16,6 @@
       font-weight: 800;
       font-size: 32px;
       line-height: 110%;
-
-      color: #454658;
     }
 
     p {
@@ -23,12 +24,11 @@
       line-height: 150%;
 
       text-align: center;
-
-      color: #454658;
     }
 
     img {
       margin-top: 32px;
+      max-width: 824px;
     }
   }
 }

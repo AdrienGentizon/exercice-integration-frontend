@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 import fetch from 'node-fetch';
-import getReactEnv from '../utils/getReactEnv';
+import getReactEnv from './../../utils/getReactEnv';
 
-import logoQovery from './../assets/svg/qovery-engine-logo.svg';
-import graphic from './../assets/svg/qovery-schematics.svg';
-import iconGithubWhite from './../assets/svg/icon-github-white.svg';
-import iconGithubBlack from './../assets/svg/icon-github-black.svg';
-import iconDiscord from './../assets/svg/icon-discord.svg';
+import logoQovery from './../../assets/svg/qovery-engine-logo.svg';
+import graphic from './../../assets/svg/qovery-schematics.svg';
+import iconGithubBlack from './../../assets/svg/icon-github-black.svg';
+import ButtonGithub from '../ButtonGithub/ButtonGithub';
+import ButtonDiscord from '../ButtonDiscord/ButtonDiscord';
 
 export default function HerroBanner() {
   const [githubInfos, setGithubInfos] = useState<undefined | any>(undefined);
@@ -38,6 +38,8 @@ export default function HerroBanner() {
     // eslint-disable-next-line
   }, []);
 
+  if (error) console.error(error);
+
   return (
     <header className="HeroBanner">
       <div className="container">
@@ -67,18 +69,8 @@ export default function HerroBanner() {
             easy apps deployment on AWS, GCP, Azure and others Cloud providers.
           </p>
           <div className="social-links">
-            <a href="https://www.github.com" target="blank">
-              <button className="github">
-                <img src={iconGithubWhite} alt="Github icon" />
-                See on Github
-              </button>
-            </a>
-            <a href="https://www.discord.com" target="blank">
-              <button className="discord">
-                <img src={iconDiscord} alt="Discord icon" />
-                Join us on Discord
-              </button>
-            </a>
+            <ButtonGithub />
+            <ButtonDiscord />
           </div>
         </div>
         <div className="graphic">

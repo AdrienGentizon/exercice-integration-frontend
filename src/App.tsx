@@ -1,6 +1,7 @@
 import React from 'react';
-import HerroBanner from './Components/HeroBanner';
-import Presentation from './Components/Presentation';
+import HerroBanner from './Components/HeroBanner/HeroBanner';
+import Presentation from './Components/Presentation/Presentation';
+import Usage from './Components/Usage/Usage';
 import './styles/main.scss';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <HerroBanner />
       <Presentation />
+      <Usage />
     </div>
   );
 }
