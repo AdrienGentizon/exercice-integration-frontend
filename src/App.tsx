@@ -1,6 +1,7 @@
 import React from 'react';
 import Features from './Components/Features/Features';
 import HerroBanner from './Components/HeroBanner/HeroBanner';
+import Partners from './Components/Partners/Partners';
 import Presentation from './Components/Presentation/Presentation';
 import Usage from './Components/Usage/Usage';
 import './styles/main.scss';
@@ -12,6 +13,7 @@ function App() {
       <Presentation />
       <Usage />
       <Features />
+      <Partners />
     </div>
   );
 }

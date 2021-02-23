@@ -1,0 +1,27 @@
+button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 9px 16px;
+  outline: none;
+  border: none;
+  color: white;
+  margin-right: 24px;
+  border-radius: 3px;
+  font-weight: 600;
+  cursor: pointer;
+
+  img {
+    margin-right: 7px;
+  }
+
+  &.github {
+    background-color: #454658;
+    img {
+      width: 19px;
+    }
+  }
+  &.discord {
+    background-color: #6578c0;
+  }
+}

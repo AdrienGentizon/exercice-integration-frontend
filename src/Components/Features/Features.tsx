@@ -5,7 +5,7 @@ import featureExtensibleImg from './../../assets/svg/qovery-feature-extensible.s
 export default function Features() {
   return (
     <div className="Features">
-      <div className="container">
+      <div className="container container--grid">
         <div className="single-feature">
           <img src={featureOnTopImg} alt="" />
           <h2>Deploy real world applications</h2>

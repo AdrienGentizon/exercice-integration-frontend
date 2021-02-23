@@ -1,9 +1,14 @@
 @import 'base/reset';
 @import 'base/fonts';
+@import 'base/typography';
+
+@import 'components/Containers';
+@import 'components/Buttons';
 
 @import 'components/HeroBanner';
 @import 'components/Presentation';
 @import 'components/Usage';
 @import 'components/Features';
+@import 'components/Partners';
 
 @import 'layouts/App';

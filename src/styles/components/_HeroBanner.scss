@@ -2,15 +2,10 @@
   background-color: #151b2b;
   color: white;
   padding-top: 41px;
-
-  // height: 100vh;
   padding-bottom: 159px;
 
   .container {
     max-width: 1024px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
 
     .text {
       margin-top: 41px;
@@ -25,11 +20,6 @@
         flex-direction: row;
         align-items: center;
 
-        h1 {
-          font-weight: 800;
-          font-size: 46px;
-          line-height: 50px;
-        }
         .gitlab-stars {
           margin-top: 10px;
           margin-left: 20px;
@@ -84,33 +74,6 @@
         flex-direction: row;
         a {
           text-decoration: none;
-          button {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding: 9px 16px;
-            outline: none;
-            border: none;
-            color: white;
-            margin-right: 24px;
-            border-radius: 3px;
-            font-weight: 600;
-            cursor: pointer;
-
-            img {
-              margin-right: 7px;
-            }
-
-            &.github {
-              background-color: #454658;
-              img {
-                width: 19px;
-              }
-            }
-            &.discord {
-              background-color: #6578c0;
-            }
-          }
         }
       }
     }

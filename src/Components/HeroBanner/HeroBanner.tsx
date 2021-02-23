@@ -42,7 +42,7 @@ export default function HerroBanner() {
 
   return (
     <header className="HeroBanner">
-      <div className="container">
+      <div className="container container--grid">
         <div className="text">
           <img src={logoQovery} alt="Qovery engine logo" />
 

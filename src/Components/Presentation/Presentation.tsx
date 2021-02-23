@@ -3,7 +3,7 @@ import qoveryPresentation from './../../assets/svg/qovery-presentation.svg';
 export default function Presentation() {
   return (
     <div className="Presentation">
-      <div className="container">
+      <div className="container container--flex">
         <h2>How does it work ?</h2>
         <p>
           Qovery Engine is an open-source abstraction layer product that turns

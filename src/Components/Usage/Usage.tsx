@@ -5,7 +5,7 @@ import CodeSnippet from './CodeSnippet/CodeSnippet';
 export default function Usage() {
   return (
     <div className="Usage">
-      <div className="container">
+      <div className="container container--flex">
         <h2>Usage</h2>
         <p>
           Initialize EKS (AWS Kubernetes) and ECR (AWS container registry) on
