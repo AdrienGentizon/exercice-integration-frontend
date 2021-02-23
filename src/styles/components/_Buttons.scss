@@ -25,3 +25,14 @@ button {
     background-color: #6578c0;
   }
 }
+
+a {
+  &.more {
+    color: #5d64d2;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 130%;
+  }
+}

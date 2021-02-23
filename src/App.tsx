@@ -1,5 +1,6 @@
 import React from 'react';
 import Features from './Components/Features/Features';
+import Footer from './Components/Footer/Footer';
 import HerroBanner from './Components/HeroBanner/HeroBanner';
 import Partners from './Components/Partners/Partners';
 import Presentation from './Components/Presentation/Presentation';
@@ -14,6 +15,7 @@ function App() {
       <Usage />
       <Features />
       <Partners />
+      <Footer />
     </div>
   );
 }

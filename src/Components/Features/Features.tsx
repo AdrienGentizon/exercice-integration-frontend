@@ -14,7 +14,9 @@ export default function Features() {
             backend, a frontend, and a database in a very simple way. Servers,
             networking, security, all is done by the Engine for you.
           </p>
-          <a href="/more">See more</a>
+          <a className="more" href="/more">
+            See more
+          </a>
         </div>
         <div className="single-feature">
           <img src={featureResiliencyImg} alt="" />
@@ -27,7 +29,9 @@ export default function Features() {
             on a consistent and working application version when something goes
             wrong.
           </p>
-          <a href="/more">See more</a>
+          <a className="more" href="/more">
+            See more
+          </a>
         </div>
         <div className="single-feature">
           <img src={featureOnTopImg} alt="" />
@@ -39,7 +43,9 @@ export default function Features() {
             applications. Servers, networking, security, all is done by the
             Engine for you.
           </p>
-          <a href="/more">See more</a>
+          <a className="more" href="/more">
+            See more
+          </a>
         </div>
         <div className="single-feature">
           <img src={featureExtensibleImg} alt="" />
@@ -49,7 +55,9 @@ export default function Features() {
             of a Cloud provider or a Continuous Integration platform is as
             simple as implementing a simple programmatic interface.
           </p>
-          <a href="/more">See more</a>
+          <a className="more" href="/more">
+            See more
+          </a>
         </div>
       </div>
     </div>
